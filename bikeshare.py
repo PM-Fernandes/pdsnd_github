@@ -49,8 +49,8 @@ def init_load():
                 file_test = 0
 
     df_city = pd.DataFrame(okay_files.items(),columns=['Filename','Last Modified'])
-    print('CSV files available: ' + str(files_counter))
-    print('CSV files okay to be used: ' + str(files_okay_counter) + '\n')
+    print('CSV files available: {}'.format(files_counter))
+    print('CSV files okay to be used: {} \n'.format(files_okay_counter))
     print(df_city)
 
     df_city['City'] = [city.replace('_',' ').split('.')[0] for city in list(okay_files.keys())]

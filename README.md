@@ -4,10 +4,18 @@
 ### pdsnd_github
 
 ### Description
-Describe what your project is about and what it does
+Python based project making use of bike sharing data provided within Udacity "Programming for Data Science with Python" nanodegree
 
 ### Files used
-Include the files used
+* [bikeshare.py](bikeshare.py)
+
+* Bike sharing data (not included):
+
+    * chicago.csv
+
+    * new_york_city.csv
+
+    * washington.csv 
 
 ### Credits
 Udacity git commit message guideline - <https://udacity.github.io/git-styleguide/>

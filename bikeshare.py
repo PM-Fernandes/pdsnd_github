@@ -143,11 +143,11 @@ def get_filters(df_city):
                 city = city.title()
                 city_file = df_city['Filename'][city_index]
             else:
-                print("\n'" + str(city) + "' not found")
+                print("\n{} not found".format(city))
                 print(df_city)
                 continue
         except (KeyError,IndexError):
-            print("\n'" + str(city) + "' not found")
+            print("\n{} not found".format(city))
             print(df_city)
             continue
 
@@ -247,7 +247,7 @@ def time_stats(df):
     # display the most common day of week
     print('Most common day of week in scope: ' + df['day_week'].mode()[0])
     # display the most common start hour
-    print('Most common start hour for travels in scope: ' + str(df['Start Hour'].mode()[0]))
+    print('Most common start hour for travels in scope: {}'.format(df['Start Hour'].mode()[0]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -264,7 +264,7 @@ def station_stats(df):
     # display most commonly used end station
     print('Most common station for trip end: ' + df['End Station'].mode()[0])
     # display most frequent combination of start station and end station trip
-    print('Most common pick and drop stations: ' + str(df['Pick and Drop'].mode()[0]))
+    print('Most common pick and drop stations: {}'.format(df['Pick and Drop'].mode()[0]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -277,9 +277,9 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # display total travel time
-    print('Total Trip Duration: ' + str(df['Trip Duration'].sum()))
+    print('Total Trip Duration: {}'.format(df['Trip Duration'].sum()))
     # display mean travel time
-    print('Mean Trip Duration: ' + str(df['Trip Duration'].mean()))
+    print('Mean Trip Duration: {}'.format(df['Trip Duration'].mean()))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -300,9 +300,9 @@ def user_stats(df):
         print(df.groupby('Gender')['Gender'].count().to_dict())
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
-        print('\nEarliest birth year: ' + str(int(df['Birth Year'].min())))
-        print('Most recent birth year: ' + str(int(df['Birth Year'].max())))
-        print('Most common birth year: ' + str(int(df['Birth Year'].mode()[0])))
+        print('\nEarliest birth year: {}'.format(int(df['Birth Year'].min())))
+        print('Most recent birth year: {}'.format(int(df['Birth Year'].max())))
+        print('Most common birth year: {}'.format(int(df['Birth Year'].mode()[0])))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -310,7 +310,7 @@ def user_stats(df):
 def dataframe_window(df):
     """Window dataframe content 5 rows at a time"""
     row_count = df.shape[0]
-    print('There are ' + str(row_count) + ' rows in scope for this analysis.')
+    print('There are {} rows in scope for this analysis.'.format(row_count))
     if input('\nWould you like to check the first 5 rows of data? Y/N:').lower() in ['yes','y']:
         i = 5
         while i <= row_count:

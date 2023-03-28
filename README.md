@@ -1,7 +1,7 @@
 ### Date created
 2023-03-28
 
-# pdsnd_github
+# PDSND_github
 
 ## Description
 Python based project making use of bike sharing data provided within Udacity "Programming for Data Science with Python" nanodegree.

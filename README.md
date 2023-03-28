@@ -1,10 +1,7 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+2023-03-28
 
-### Project Title
-Replace the Project Title
+### pdsnd_github
 
 ### Description
 Describe what your project is about and what it does
@@ -13,5 +10,16 @@ Describe what your project is about and what it does
 Include the files used
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity git commit message guideline - <https://udacity.github.io/git-styleguide/>
 
+Tuple from columns Pandas - <https://stackoverflow.com/questions/16031056/how-to-form-tuple-column-from-two-columns-in-pandas>
+
+First n records of Pandas dataframe - <https://www.geeksforgeeks.org/get-first-n-records-of-a-pandas-dataframe/>
+
+Get directory of current Python script- <https://www.geeksforgeeks.org/get-directory-of-current-python-script/#:~:text=Using%20os.&text=getcwd()%20method%20is%20used,of%20the%20Python%20OS%20module.>
+
+Get file modified date in Python - <https://stackoverflow.com/questions/60506508/get-file-size-creation-date-and-modification-date-in-python>
+
+How to read first n rows - <https://stackoverflow.com/questions/23853553/python-pandas-how-to-read-only-first-n-rows-of-csv-files-in>
+
+Pandas map -<https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html>

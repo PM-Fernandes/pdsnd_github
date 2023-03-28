@@ -1,12 +1,13 @@
 ### Date created
 2023-03-28
 
-### pdsnd_github
+# pdsnd_github
 
-### Description
-Python based project making use of bike sharing data provided within Udacity "Programming for Data Science with Python" nanodegree
+## Description
+Python based project making use of bike sharing data provided within Udacity "Programming for Data Science with Python" nanodegree.
+Upon requested user input `day of week` and/or `month`, provides statistics on most used _stations, trip and users_ (whenever available)
 
-### Files used
+## Files used
 * [bikeshare.py](bikeshare.py)
 
 * Bike sharing data (not included):

@@ -8,7 +8,7 @@ Python based project making use of bike sharing data provided within Udacity "Pr
 Upon requested user input `day of week` and/or `month`, provides statistics on most used _stations, trip and users_ (whenever available)
 
 ## Files used
-* [bikeshare.py](bikeshare.py)
+* [bikeshare.py](bikeshare.py "Python")
 
 * Bike sharing data (not included):
 
